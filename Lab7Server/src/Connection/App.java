@@ -57,17 +57,10 @@ public class App {
                 if (users.isValue("login", login)) {
                     if (users.isValue("password", password)) {
                         sender.send("valid");
-//                        sender.send(new CollectionShell(HumanCollection.getArray(),
-//                                HumanCollection.getDateCreation());
                     } else sender.send("notValid");
                 } else sender.send("notValid");
             }
             System.out.println("Клиент [" + loginPassword.get("login") + "] подключен к серверу.\n");
-//            System.out.println("Клиенту [" + loginPassword.get("login") + "] отправлено сообщение:\nПрограмма подключена к серверу.\n");
-//            sender.send("Программа подключена к серверу.\n");
-//            sender.send(new CollectionShell(HumanCollection.getArray(),
-//                    HumanCollection.getDateCreation(),
-//                    HumanCollection.getColors()));
         } catch (Exception e) {
             e.printStackTrace();
         }
